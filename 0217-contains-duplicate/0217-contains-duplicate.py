@@ -1,11 +1,11 @@
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        countMap = set()
+        hashset = set()
      
         for nums in nums:
-            if nums in countMap:
+            if nums in hashset:
                 return True
             else:
-                countMap.add(nums) 
+                hashset.add(nums) 
            
-        return False     
+        return False 
