@@ -1,6 +1,5 @@
 class Solution:
     def countStudents(self, students: List[int], sandwiches: List[int]) -> int:
-        
         counter = 0 
         while len(students) > 0 and counter < len(students):
         
