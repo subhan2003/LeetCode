@@ -4,12 +4,7 @@ class MyStack:
         self.stack = deque()
 
     def push(self, x: int) -> None:
-        new_stack = deque()
-        new_stack.append(x)
-        for i in range(len(self.stack)):
-            temp = self.stack.popleft()
-            new_stack.append(temp)  
-        self.stack = new_stack
+        self.stack.appendleft(x)
 
     def pop(self) -> int:
         return self.stack.popleft()
