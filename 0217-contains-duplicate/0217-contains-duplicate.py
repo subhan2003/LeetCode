@@ -5,7 +5,6 @@ class Solution:
         for nums in nums:
             if nums in hashset:
                 return True
-            else:
-                hashset.add(nums) 
+            hashset.add(nums) 
            
         return False 
