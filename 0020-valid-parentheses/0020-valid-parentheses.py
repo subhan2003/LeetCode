@@ -9,9 +9,10 @@ class Solution:
             else:
                 if len(stack) == 0:
                     return False
-                x = stack.pop()
+                x = stack[-1]
                 if (x == '(' and s[i] == ')') or (x == '[' and s[i] == ']') or (x == '{' and s[i] == '}'):
-                       flag = True
+                    flag = True
+                    stack.pop()
                 else:
                     return False
                 
